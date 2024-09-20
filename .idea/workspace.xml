@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bb14546-c262-4e12-a918-8a2d56abbd6b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy_terraria_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy_terraria_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
