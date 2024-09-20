@@ -1,5 +1,6 @@
 import requests
 import subprocess
+import os
 
 # Direct URL to the world file
 WORLD_URL = "https://qravlinciblimqfepcbd.supabase.co/storage/v1/object/public/kingcityterraria/KING_CITY.wld?t=2024-09-20T01%3A27%3A43.020Z"
@@ -19,6 +20,10 @@ with open(WORLD_FILE_PATH, 'wb') as f:
 response = requests.get(SERVER_URL)
 with open(SERVER_PATH, 'wb') as f:
     f.write(response.content)
+
+# Check if the server executable exists
+print("Current working directory:", os.getcwd())
+print("Server executable exists:", os.path.isfile(SERVER_PATH))
 
 # Start the server
 subprocess.run([SERVER_PATH, '-world', WORLD_FILE_PATH, '-port', SERVER_PORT])
