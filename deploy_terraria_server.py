@@ -13,4 +13,5 @@ with open(WORLD_FILE_PATH, 'wb') as f:
     f.write(response.content)
 
 # Start the server
-subprocess.run([SERVER_PATH, "-world", WORLD_FILE_PATH, "-port", SERVER_PORT])
+subprocess.run(['TerrariaServer', '-world', 'https://qravlinciblimqfepcbd.supabase.co/storage/v1/object/public/kingcityterraria/KING_CITY.wld', '-port', '7777'])
+
