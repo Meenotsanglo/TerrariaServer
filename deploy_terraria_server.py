@@ -13,7 +13,7 @@ def download_world():
         file.write(response.content)
 
 def start_server():
-    command = f"./TerrariaServer -x64 -world {WORLD_FILE_PATH} -port {SERVER_PORT}"
+    command = f"./TerrariaServer -world {WORLD_FILE_PATH} -port {SERVER_PORT}"
     subprocess.run(command, shell=True, check=True)
 
 if __name__ == "__main__":
